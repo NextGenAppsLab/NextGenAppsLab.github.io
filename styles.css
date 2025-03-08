@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #5a5a5a;
+}
+
+a {
+    color: #5a5a5a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5a5a5a;
+    text-decoration: none;
+}
+
+.link {
+    color: #168afe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #1268c7;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 20px;
+    gap: 20px;
+}
+
+.left-column {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 20px 0;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-column video {
+    max-height: 95vh;
+    width: auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.right-column {
+    max-width: 600px;
+    max-width: 460px;
+    padding: 20px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    color: #5a5a5a;
+    text-align: justify;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin: 0 15px;
+        align-items: flex-start;
+    }
+
+    .left-column video {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    .right-column {
+        max-width: none;
+        width: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    .left-column {
+        position: static;
+        height: auto;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .left-column video {
+        max-height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .right-column {
+        width: 100%;
+        max-width: none;
+        padding: 0 10px 20px;
+    }
+}
