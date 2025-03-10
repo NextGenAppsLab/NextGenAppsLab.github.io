@@ -4,7 +4,7 @@ liluApp is an app with the core features of a social network for businesses, sta
 
 **Site:** [http://nextgenappslab.github.io](http://nextgenappslab.github.io)
 
-You can find us on YouTube, X, Telegram, TikTok, and GitHub: 
-@nextgenappslab
+@nextgenappslab - You can find us on YouTube, X, Telegram, TikTok, and GitHub: 
+
 
 
