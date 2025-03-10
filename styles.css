@@ -146,3 +146,10 @@ a:hover {
         padding: 0 10px 20px;
     }
 }
+
+.counter {
+    position: absolute;
+    left: 0px;
+    top: -1000px;
+}
+
