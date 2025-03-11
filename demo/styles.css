@@ -214,6 +214,8 @@ a {
     position: relative;
     background: #ffffff;
     border-radius: 15px;
+    font-size: 17px;
+    line-height: 20px;
 }
 
 .block1-avatar {
@@ -297,6 +299,8 @@ a {
 
 .block1-text {
     padding: 7px 15px 0 50px;
+    font-size: 17px;
+    line-height: 20px;
 }
 
 .block1-line-image {
