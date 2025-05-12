@@ -73,8 +73,9 @@ a:hover {
     padding: 20px;
     flex-grow: 0;
     flex-shrink: 1;
-    color: #5a5a5a;
-    text-align: justify;
+    color: #353535;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .section {
@@ -153,3 +154,27 @@ a:hover {
     top: -1000px;
 }
 
+.download-button {
+    display: inline-block;
+    background-color: #168afe;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #1268c7;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .download-button {
+        display: block;
+        width: 100%;
+    }
+}
