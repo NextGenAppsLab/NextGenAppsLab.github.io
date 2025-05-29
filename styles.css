@@ -200,12 +200,12 @@ a:hover {
     .left-column {
         position: static;
         height: auto;
-        padding: 20px 0;
+        padding: 20px 0 0 0;
         width: 100%;
     }
 
     .left-column video {
-        max-height: 100vh;
+        max-height: 60vh;
         width: 100%;
         max-width: 100%;
         border-radius: 15px;
@@ -246,4 +246,3 @@ a:hover {
     left: -10000px;
     opacity: 0;
 }
-
