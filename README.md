@@ -1,10 +1,7 @@
 # NextGenAppsLab.github.io
 
-liluApp is an app with the core features of a social network for businesses, startups, investors, AI and cryptocurrency developers. Launch your own social network! 
+Launch your own private social network on your website. No coding. Ready in 5 minutes. Communicate and collaborate with friends, teammates, partners, or colleagues — all in private. Your data stays on your server — not shared with public platforms. Try it free.
 
-**Site:** [http://nextgenappslab.github.io](http://nextgenappslab.github.io)
+**Site:** [https://nextgenappslab.github.io](https://nextgenappslab.github.io)
 
 @nextgenappslab - You can find us on YouTube, X, Telegram, TikTok, and GitHub
-
-
-
