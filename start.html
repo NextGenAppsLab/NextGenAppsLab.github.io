@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Status Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .status {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status">Checking API status...</div>
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        const apiUrl = 'https://server-1-ta61.onrender.com/';
+        const restartUrl = 'https://api.render.com/deploy/srv-d0t0pc3ipnbc73doqscg?key=H4RHT0luk60';
+        const siteUrl = 'https://front-2fs8.onrender.com/';
+        const maxAttempts = 3;
+        let attempt = 0;
+
+        async function checkApi() {
+            updateStatus('Checking API status...');
+            try {
+                const response = await fetch(apiUrl, { method: 'GET', mode: 'cors' });
+                if (response.ok) {
+                    redirectToSite();
+                } else {
+                    await restartServer();
+                }
+            } catch (error) {
+                if (error.message.includes('503') || error.message.includes('network')) {
+                    await restartServer();
+                } else {
+                    updateStatus('Unexpected error occurred. Please try again later.');
+                }
+            }
+        }
+
+        async function restartServer() {
+            if (attempt >= maxAttempts) {
+                updateStatus('Unable to restart server after multiple attempts.');
+                return;
+            }
+
+            attempt++;
+            updateStatus(`API is down. Attempting to restart server (Attempt ${attempt}/${maxAttempts})...`);
+
+            try {
+                await fetch(restartUrl, { method: 'POST', mode: 'cors' });
+                await wait(30);
+                await checkApi();
+            } catch (error) {
+                updateStatus('Error restarting server. Retrying...');
+                await wait(30);
+                await checkApi();
+            }
+        }
+
+        function wait(seconds) {
+            return new Promise(resolve => setTimeout(resolve, seconds * 1000));
+        }
+
+        function redirectToSite() {
+            updateStatus('API is available! Redirecting to the site...');
+            setTimeout(() => {
+                window.location.href = siteUrl;
+            }, 1000);
+        }
+
+        function updateStatus(message) {
+            document.querySelector('.status').textContent = message;
+        }
+
+        // Start the process
+        checkApi();
+    </script>
+</body>
+</html>

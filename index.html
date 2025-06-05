@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liluApp – Private social network for your website</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="lilu-header">
+        <div class="lilu-header__container">
+            <div class="lilu-header__inner">
+                <a href="./index.html" class="lilu-header__logo-link">
+                    <div class="lilu-header__logo">liluApp</div>
+                </a>
+                <nav class="lilu-header__nav">
+                    <a href="./index.html" class="lilu-header__nav-link lilu-header__nav-link--active">Home</a>
+                    <a href="#" class="lilu-header__nav-link">About</a>
+                    <a href="./start.html" class="lilu-header__nav-link lilu-header__nav-button">Get Started</a>
+                </nav>
+                <button class="lilu-header__menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="lilu-main">
+        <!-- Hero Section -->
+        <section class="lilu-hero">
+            <div class="lilu-hero__container">
+                <div class="lilu-hero__content">
+                    <div class="lilu-hero__text">
+                        <h1 class="lilu-hero__title">Private social network</h1>
+                        <p class="lilu-hero__description">
+                            Launch your own private social network on your website. Try it free. No coding. Ready in 5 minutes. Communicate and collaborate with friends, teammates, partners, or colleagues — all in private. Your data stays on your server — not shared with public platforms. 
+                        </p>
+                        <form class="lilu-hero__signup-form" action="./start.html" method="GET">
+                            <input type="email" name="email" placeholder="Enter your email" required class="lilu-hero__form-input">
+                            <button type="submit" class="lilu-hero__form-button">Get Started</button>
+                        </form>
+                        <p class="lilu-hero__form-note">Try it free. No credit card required.</p>
+                    </div>
+                    <div class="lilu-hero__image">
+                        <img src="1.png" alt="liluApp interface example" class="lilu-hero__responsive-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="lilu-features">
+            <div class="lilu-features__container">
+                <div class="lilu-features__header">
+                    <div class="lilu-features__title-wrapper">
+                        <h2 class="lilu-features__title">What you get with liluApp</h2>
+                    </div>
+                    <p class="lilu-features__subtitle">Everything your community needs — all in one place</p>
+                </div>
+
+                <div class="lilu-features__container-grid">
+                    <div class="lilu-features__block lilu-features__block--1">
+                        <h3 class="lilu-features__block-heading">Flexible access</h3>
+                        <p class="lilu-features__block-description">Your network can be completely private or open to selected external users — you decide who gets in.</p>
+                    </div>
+                    
+                    <div class="lilu-features__block lilu-features__block--2">
+                        <h3 class="lilu-features__block-heading">Profiles</h3>
+                        <p class="lilu-features__block-description">Create private or public profiles, share content, and connect with other members of your space.</p>
+                    </div>
+                    
+                    <div class="lilu-features__block lilu-features__block--3">
+                        <h3 class="lilu-features__block-heading">Posts</h3>
+                        <p class="lilu-features__block-description">Share updates, media, and more — posts appear in your profile and your followers’ feeds.</p>
+                    </div>
+                    
+                    <div class="lilu-features__block lilu-features__block--4">
+                        <h3 class="lilu-features__block-heading">Comments</h3>
+                        <p class="lilu-features__block-description">Start conversations, reply to posts, and stay in the loop with an easy-to-follow comment feed.</p>
+                    </div>
+                    
+                    <div class="lilu-features__block lilu-features__block--5">
+                        <h3 class="lilu-features__block-heading">News feed</h3>
+                        <p class="lilu-features__block-description">Stay up to date with posts from the people and profiles that matter to you.</p>
+                    </div>
+                    
+                    <div class="lilu-features__block lilu-features__block--6">
+                        <h3 class="lilu-features__block-heading">Messages</h3>
+                        <p class="lilu-features__block-description">Send private messages and get instant notifications when someone replies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="lilu-footer">
+        <div class="lilu-footer__container">
+            <div class="lilu-footer__inner">
+                <div class="lilu-footer__col">
+                    <h3 class="lilu-footer__title">liluApp</h3>
+                    <p class="lilu-footer__text">Launch your own private social network on your website. No coding. Ready in 5 minutes. Try it free.</p>
+                </div>
+                <div class="lilu-footer__col">
+                    <h3 class="lilu-footer__title">Contact</h3>
+                    <a href="mailto:nextgenappslab@gmail.com" class="lilu-footer__link">nextgenappslab@gmail.com</a>
+                    <a href="mailto:nextgenappslab@proton.me" class="lilu-footer__link">nextgenappslab@proton.me</a>
+                </div>
+                <div class="lilu-footer__col">
+                    <h3 class="lilu-footer__title">Resources</h3>
+                    <a href="#" class="lilu-footer__link">Documentation</a>
+                    <a href="#" class="lilu-footer__link">Support</a>
+                </div>
+            </div>
+            <div class="lilu-footer__copyright">
+                © 2025 liluApp. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.lilu-header__menu-toggle').addEventListener('click', function() {
+            document.querySelector('.lilu-header__nav').classList.toggle('lilu-header__nav--active');
+        });
+    </script>
+</body>
+</html>
+
