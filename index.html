@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactScript — A Script to Launch Your Own Social Network</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css?xxyy1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a href="./index.html" class="header__logo-link">
+                    <div class="header__logo">
+                        <span class="logo-part logo-part--black">contact</span>
+                        <span class="logo-part logo-part--accent">script</span>
+                        <span class="header__slogan">social network script</span>
+                    </div>
+                </a>
+                <nav class="header__nav">
+                    <a href="./features.html" class="header__nav-link">Features</a>
+                    <a href="./pricing.html" class="header__nav-link">Pricing</a>
+                    <a href="./partners.html" class="header__nav-link">Partners</a>
+                    <a href="./contact.html" class="header__nav-link">Contact</a>
+                    <a href="./login.html" class="header__nav-link">Login</a>
+                    <a href="./start.html" target="_blank" class="header__nav-link header__nav-button">Get Started</a>
+                </nav>
+                <button class="header__menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.header__menu-toggle').addEventListener('click', function() {
+            document.querySelector('.header__nav').classList.toggle('header__nav--active');
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Hero CTA Section -->
+<section class="hero-cta">
+    <div class="hero-cta__container">
+        <div class="hero-cta__content">
+            <h1 class="hero-cta__title">Your social network <br><span class="hero-cta__highlight">under your control</span></h1>
+            <p class="hero-cta__subtitle">Install our script on your server and launch a <strong>public or private</strong> social platform in 5 minutes. Own your data, set the rules, avoid blocks and restrictions.</p>
+            
+            <div class="hero-cta__badges">
+                <div class="hero-cta__badge">
+                    <svg class="hero-cta__badge-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    Public or private
+                </div>
+                <div class="hero-cta__badge">
+                    <svg class="hero-cta__badge-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    Full data ownership
+                </div>
+                <div class="hero-cta__badge">
+                    <svg class="hero-cta__badge-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    No risks from third-party platforms
+                </div>
+                <div class="hero-cta__badge">
+                    <svg class="hero-cta__badge-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    Freedom to monetize
+                </div>
+            </div>
+            
+            <div class="hero-cta__form">
+                <a href="./start.html" target="_blank" class="hero-cta__big-button">Start for free</a>
+                <p class="hero-cta__disclaimer">No credit card required</p>
+            </div>
+        </div>
+        <div class="hero-cta__image">
+            <div class="hero-cta__phone-mockup">
+                <video class="hero-cta__phone-video" autoplay loop muted playsinline>
+                    <source src="./videos/index.mp4?xxyy1" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Problems We Solve Section -->
+<section class="problems-section">
+  <div class="problems-section__container">
+    <h2 class="problems-title">Problems We Solve</h2>
+    <p class="problems-subtitle">Public social networks no longer work in your favor. We created a solution that frees you from their limitations:</p>
+    
+    <div class="problems-grid">
+      <div class="problem-card">
+        <h3 class="problem-card__title">Account blocks and deletions</h3>
+        <p class="problem-card__text">Your account can be deleted at any time on public networks.</p>
+        <p class="problem-card__solution"><strong>Our solution:</strong> You own the network — no one can block or delete your account.</p>
+      </div>
+      
+      <div class="problem-card">
+        <h3 class="problem-card__title">Data leaks and collection</h3>
+        <p class="problem-card__text">Your data is someone else's business.</p>
+        <p class="problem-card__solution"><strong>Our solution:</strong> All data is stored with you. You decide who can see what.</p>
+      </div>
+      
+      <div class="problem-card">
+        <h3 class="problem-card__title">Algorithms that don't serve you</h3>
+        <p class="problem-card__text">Reach, filtering, moderation — you depend on someone else's decisions.</p>
+        <p class="problem-card__solution"><strong>Our solution:</strong> You fully control the logic, reach, and rules — no imposed restrictions.</p>
+      </div>
+      
+      <div class="problem-card">
+        <h3 class="problem-card__title">Unwanted content and audience</h3>
+        <p class="problem-card__text">Spam, toxicity, unwanted topics.</p>
+        <p class="problem-card__solution"><strong>Our solution:</strong> Only you decide who participates and what can be discussed.</p>
+      </div>
+      
+      <div class="problem-card">
+        <h3 class="problem-card__title">Loss of everything when policies change</h3>
+        <p class="problem-card__text">Policies can change. The network may disappear.</p>
+        <p class="problem-card__solution"><strong>Our solution:</strong> Your network lives on a server, hosting, cloud, or your local network. It belongs to you and won’t disappear.</p>
+      </div>
+      
+      <div class="problem-card">
+        <h3 class="problem-card__title">Limited monetization</h3>
+        <p class="problem-card__text">You create value — someone else profits.</p>
+        <p class="problem-card__solution"><strong>Our solution:</strong> You have full control over monetization. No middlemen or restrictions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__links">
+                    <a href="./features.html" class="footer__link">Features</a>
+                    <a href="./pricing.html" class="footer__link">Pricing</a>
+                    <a href="./partners.html" class="footer__link">Partners</a>
+                    <a href="./partner-program.html" class="footer__link">Partner Program</a>
+                    <a href="./faq.html" class="footer__link">FAQ</a>
+                    <a href="./contact.html" class="footer__link">Contact</a>
+                    <a href="./login.html" class="footer__link">Login</a>
+                    <a href="./start.html" target="_blank" class="footer__link footer__link--accent">Get Started</a>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info-row">
+                        <a href="./index.html" class="footer__brand">ContactScript</a>
+                        <span class="footer__separator">•</span>
+                        <span class="footer__copyright">© 2025 All rights reserved</span>
+                        <span class="footer__separator">•</span>
+                        <a href="./privacy.html" class="footer__privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

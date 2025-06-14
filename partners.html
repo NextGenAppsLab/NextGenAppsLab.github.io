@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Partners — ContactScript</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="partners.css?xxyy1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a href="./index.html" class="header__logo-link">
+                    <div class="header__logo">
+                        <span class="logo-part logo-part--black">contact</span>
+                        <span class="logo-part logo-part--accent">script</span>
+                        <span class="header__slogan">social network script</span>
+                    </div>
+                </a>
+                <nav class="header__nav">
+                    <a href="./features.html" class="header__nav-link">Features</a>
+                    <a href="./pricing.html" class="header__nav-link">Pricing</a>
+                    <a href="./partners.html" class="header__nav-link header__nav-link--active">Partners</a>
+                    <a href="./contact.html" class="header__nav-link">Contact</a>
+                    <a href="./login.html" class="header__nav-link">Login</a>
+                    <a href="./start.html" target="_blank" class="header__nav-link header__nav-button">Get Started</a>
+                </nav>
+                <button class="header__menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.header__menu-toggle').addEventListener('click', function() {
+            document.querySelector('.header__nav').classList.toggle('header__nav--active');
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+    <main class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Partners Section - Redesigned -->
+<section class="partners">
+    <div class="partners__container">
+        <div class="partners__header">
+            <h2 class="partners__title">Buy from Our Partners</h2>
+            <p class="partners__subtitle">Check out the list of partners or <a href="./partner-program.html" class="partner-card__link">join our partner program</a></p>
+        </div>
+
+        <div class="partners__table">
+
+            <!-- Partner 4 - Freelancer (Web Designer) -->
+            <div class="partner-card" data-partner="CODEO">
+                <div class="partner-card__info">
+                    <h3 class="partner-card__name" data-partner="CODEO">CODEO</h3>
+                    <p class="partner-card__desc">CODEO creates responsive websites with modern design and intuitive interfaces, specializing in professional Contact Script installation, ensuring seamless integration and high conversion.</p>
+                </div>
+                <div class="partner-card__actions">
+                    <button class="partner-card__cta" data-partner="CODEO">Get Script</button>
+                </div>
+            </div>
+
+            <!-- Partner 3 - Freelancer (App Developer) -->
+            <div class="partner-card" data-partner="Roma Dev">
+                <div class="partner-card__info">
+                    <h3 class="partner-card__name">Roma Dev</h3>
+                    <p class="partner-card__desc">Independent app developer with over 8 years of experience creating mobile solutions. Specializes in cross-platform apps with a focus on user experience.</p>
+                </div>
+                <div class="partner-card__actions">
+                    <button class="partner-card__cta" data-partner="Roma Dev">Get Script</button>
+                </div>
+            </div>
+
+            <!-- Partner 2 - Branding Agency -->
+            <div class="partner-card" data-partner="BrandForge Collective">
+                <div class="partner-card__info">
+                    <h3 class="partner-card__name">BrandForge Collective</h3>
+                    <p class="partner-card__desc">Strategic branding agency helping startups and companies create powerful visual identities and brand narratives.</p>
+                </div>
+                <div class="partner-card__actions">
+                    <button class="partner-card__cta" data-partner="BrandForge Collective">Get Script</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="partners__cta-section">
+            <div class="partners__cta-content">
+                <h3 class="partners__cta-title">Want Your Company Here?</h3>
+                <p class="partners__cta-text">Join our partner program and let clients find you. Sell with exclusive partner benefits.</p>
+            </div>
+            <button onclick="window.location.href='./partner-program.html';" class="partners__join-btn">Apply for Partnership</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Window -->
+<div class="partner-modal" id="partnerModal">
+    <div class="partner-modal__overlay"></div>
+    <div class="partner-modal__content">
+        <button class="partner-modal__close">&times;</button>
+        <div class="partner-modal__header">
+            <img src="https://source.unsplash.com/random/150x150/?portrait,business" alt="Partner" class="partner-modal__avatar" id="modalAvatar">
+            <div>
+                <h3 class="partner-modal__name" id="modalName">Partner Name</h3>
+                <p class="partner-modal__type" id="modalType">Agency / Freelancer</p>
+            </div>
+        </div>
+        <div class="partner-modal__body">
+            <div class="partner-modal__section">
+                <p class="partner-modal__text" id="modalAbout">Detailed description of the partner.</p>
+            </div>
+            <div class="partner-modal__section">
+                <div class="partner-modal__contacts">
+<a href="#" class="partner-modal__contact-link" id="modalWebsite" target="_blank">
+    <svg class="partner-modal__icon" viewBox="0 0 24 24" width="20" height="20">
+        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+    </svg>
+    <span id="websiteText"></span>
+</a>
+<a href="mailto:partner@example.com" class="partner-modal__contact-link" id="modalEmail">
+    <svg class="partner-modal__icon" viewBox="0 0 24 24" width="20" height="20">
+        <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+    <span id="emailText"></span>
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    // Partner data (would normally come from API/database)
+const partnersData = {
+    "BrandForge Collective": {
+        type: "Branding Agency",
+        about: "We help startups and companies create powerful visual identities and brand narratives that resonate with their target audience. Our team of strategists and designers works closely with clients to create holistic branding systems.",
+        avatar: "./images/partners/BrandForge-Collective.png"
+    },
+    "Roma Dev": {
+        type: "Independent App Developer",
+        about: "With over 8 years of experience in mobile development, I specialize in creating cross-platform applications with exceptional user experience. I have helped dozens of startups bring their ideas to life with clean, efficient code.",
+        email: "appslilu@gmail.com",
+        avatar: "./images/partners/Roma.png"
+    },
+    "CODEO": {
+        type: "UI/UX Designer and Developer",
+        about: "CODEO creates responsive websites with modern design and functionality. Special focus is on implementing Contact Script for effective client interaction and conversion growth. CODEO means simplicity, effectiveness, and digital solutions that work for business.",
+        website: "https://codeostudio.online",
+        email: "info@codeostudio.online",
+        avatar: "./images/partners/Codeo.png"
+    }
+};
+
+
+    // Modal functionality
+    const modal = document.getElementById('partnerModal');
+    const modalClose = document.querySelector('.partner-modal__close');
+    const modalOverlay = document.querySelector('.partner-modal__overlay');
+    
+    // Open modal when partner card is clicked
+    document.querySelectorAll('.partner-card').forEach(button => {
+        button.addEventListener('click', function() {
+            const partnerName = this.getAttribute('data-partner');
+            const partnerData = partnersData[partnerName];
+            
+            // Set modal content
+            document.getElementById('modalName').textContent = partnerName;
+            document.getElementById('modalType').textContent = partnerData.type;
+            document.getElementById('modalAbout').textContent = partnerData.about;
+            document.getElementById('modalAvatar').src = partnerData.avatar;
+            document.getElementById('modalAvatar').alt = `${partnerName} аватар`;
+            
+            // Set website link
+            const websiteLink = document.getElementById('modalWebsite');
+            const websiteText = document.getElementById('websiteText');
+            websiteLink.href = partnerData.website;
+            websiteText.textContent = partnerData.website;
+            websiteLink.style.display = partnerData.website ? 'flex' : 'none';
+
+            // Set email link
+            const emailLink = document.getElementById('modalEmail');
+            const emailText = document.getElementById('emailText');
+            emailLink.href = `mailto:${partnerData.email}`;
+            emailText.textContent = partnerData.email;
+            emailLink.style.display = partnerData.email ? 'flex' : 'none';
+            
+            // Show modal
+            modal.classList.add('partner-modal--visible');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    // Close modal
+    function closeModal() {
+        modal.classList.remove('partner-modal--visible');
+        document.body.style.overflow = 'auto';
+    }
+    
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+    
+    // Close when pressing ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('partner-modal--visible')) {
+            closeModal();
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__links">
+                    <a href="./features.html" class="footer__link">Features</a>
+                    <a href="./pricing.html" class="footer__link">Pricing</a>
+                    <a href="./partners.html" class="footer__link">Partners</a>
+                    <a href="./partner-program.html" class="footer__link">Partner Program</a>
+                    <a href="./faq.html" class="footer__link">FAQ</a>
+                    <a href="./contact.html" class="footer__link">Contact</a>
+                    <a href="./login.html" class="footer__link">Login</a>
+                    <a href="./start.html" target="_blank" class="footer__link footer__link--accent">Get Started</a>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info-row">
+                        <a href="./index.html" class="footer__brand">ContactScript</a>
+                        <span class="footer__separator">•</span>
+                        <span class="footer__copyright">© 2025 All rights reserved</span>
+                        <span class="footer__separator">•</span>
+                        <a href="./privacy.html" class="footer__privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

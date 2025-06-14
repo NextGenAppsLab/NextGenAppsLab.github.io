@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Personal Account — ContactScript</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="login.css?xxyy1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a href="./index.html" class="header__logo-link">
+                    <div class="header__logo">
+                        <span class="logo-part logo-part--black">contact</span>
+                        <span class="logo-part logo-part--accent">script</span>
+                        <span class="header__slogan">social network script</span>
+                    </div>
+                </a>
+                <nav class="header__nav">
+                    <a href="./features.html" class="header__nav-link">Features</a>
+                    <a href="./pricing.html" class="header__nav-link">Pricing</a>
+                    <a href="./partners.html" class="header__nav-link">Partners</a>
+                    <a href="./contact.html" class="header__nav-link">Contact</a>
+                    <a href="./login.html" class="header__nav-link header__nav-link--active">Login</a>
+                    <a href="./start.html" target="_blank" class="header__nav-link header__nav-button">Get Started</a>
+                </nav>
+                <button class="header__menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.header__menu-toggle').addEventListener('click', function() {
+            document.querySelector('.header__nav').classList.toggle('header__nav--active');
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+    <main class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Auth Section - Improved -->
+<section class="auth-improved">
+  <div class="auth-improved__container">
+    <div class="auth-improved__content">
+      <h1 class="auth-improved__title">Personal Account</h1>
+      <p class="auth-improved__subtitle">Log in to continue</p>
+      
+      <form class="auth-improved__form">
+        <div class="auth-improved__error-message" id="error-message" style="display: none;">
+          Incorrect email address or password
+        </div>
+        
+        <div class="auth-improved__input-group">
+          <input type="email" class="auth-improved__input" id="email" placeholder="Email address" required>
+        </div>
+        
+        <div class="auth-improved__input-group">
+          <input type="password" class="auth-improved__input" id="password" placeholder="Password" required>
+          <a href="./recovery.html" class="auth-improved__forgot">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="auth-improved__button">
+          Log in
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        
+        <div class="auth-improved__alternative">
+          <span>Don’t have an account?</span>
+          <a href="./start.html" target="_blank" class="auth-improved__link">Start for free</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+
+  document.querySelector('.auth-improved__form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const errorMessage = document.getElementById('error-message');
+    
+    errorMessage.style.display = 'none';
+    email.classList.remove('auth-improved__input--error');
+    password.classList.remove('auth-improved__input--error');
+    
+    setTimeout(() => {
+      errorMessage.style.display = 'block';
+      
+      email.classList.add('auth-improved__input--error');
+      password.classList.add('auth-improved__input--error');
+      
+      email.focus();
+    }, 800); 
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__links">
+                    <a href="./features.html" class="footer__link">Features</a>
+                    <a href="./pricing.html" class="footer__link">Pricing</a>
+                    <a href="./partners.html" class="footer__link">Partners</a>
+                    <a href="./partner-program.html" class="footer__link">Partner Program</a>
+                    <a href="./faq.html" class="footer__link">FAQ</a>
+                    <a href="./contact.html" class="footer__link">Contact</a>
+                    <a href="./login.html" class="footer__link">Login</a>
+                    <a href="./start.html" target="_blank" class="footer__link footer__link--accent">Get Started</a>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info-row">
+                        <a href="./index.html" class="footer__brand">ContactScript</a>
+                        <span class="footer__separator">•</span>
+                        <span class="footer__copyright">© 2025 All rights reserved</span>
+                        <span class="footer__separator">•</span>
+                        <a href="./privacy.html" class="footer__privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

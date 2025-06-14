@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started — ContactScript</title>
+    <link rel="stylesheet" href="start.css?xxyy1">
+</head>
+<body>
+    <a href="./index.html" class="logo">
+        <span>contact</span><span>script</span>
+    </a>
+
+    <div class="container">
+        <img src="./images/loading.gif" alt="Loading" class="loading-image">
+        <div class="status">Creating demo version...</div>
+        <div class="loader"></div>
+    </div>
+
+    <script>
+        const apiUrl = 'https://kscriptapi.onrender.com/';
+        const restartUrl = 'https://api.render.com/deploy/srv-d16htqh5pdvs73fbe4e0?key=lqgct73bFv8';
+        const siteUrl = 'https://kscript.onrender.com/?signInDemo';
+        const maxAttempts = 3;
+        let attempt = 0;
+
+        async function checkApi() {
+            updateStatus('Creating demo version...');
+            try {
+                const response = await fetch(apiUrl, { method: 'GET', mode: 'cors' });
+                if (response.ok) {
+                    redirectToSite();
+                } else {
+                    await restartServer();
+                }
+            } catch (error) {
+                if (error.message.includes('503') || error.message.includes('network')) {
+                    await restartServer();
+                } else {
+                    updateStatus('An unexpected error occurred. Please try again later...');
+                }
+            }
+        }
+
+        async function restartServer() {
+            if (attempt >= maxAttempts) {
+                updateStatus('Failed to create demo version after several attempts.');
+                return;
+            }
+
+            attempt++;
+            updateStatus(`Demo version was not created. Attempting to create demo version (Attempt ${attempt}/${maxAttempts})...`);
+
+            try {
+                await fetch(restartUrl, { method: 'POST', mode: 'cors' });
+                await wait(30);
+                await checkApi();
+            } catch (error) {
+                updateStatus('Error creating demo version. Retrying...');
+                await wait(30);
+                await checkApi();
+            }
+        }
+
+        function wait(seconds) {
+            return new Promise(resolve => setTimeout(resolve, seconds * 1000));
+        }
+
+        function redirectToSite() {
+            updateStatus('Demo version created! <br>Redirecting to demo version...');
+            setTimeout(() => {
+                window.location.href = siteUrl;
+            }, 1000);
+        }
+
+        function updateStatus(message) {
+            document.querySelector('.status').innerHTML = message;
+        }
+
+        // Start the process
+        checkApi();
+    </script>
+</body>
+</html>
+
