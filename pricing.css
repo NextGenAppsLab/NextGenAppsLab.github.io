@@ -522,6 +522,9 @@ body {
 
 
 
+
+
+
 /* Pricing Plans Section */
 .pricing-plans {
     padding: 100px 0 40px 0;
@@ -826,6 +829,63 @@ body {
 }
 
 
+.pricing-plans__original-price {
+    font-size: 20px;
+    color: #6c757d;
+    margin-right: 8px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.pricing-plans__original-price::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ff2f96;
+    transform: rotate(-15deg);
+    transform-origin: center center;
+}
+
+
+
+
+
+.pricing-plans__price-container {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.pricing-plans__discount-badge {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+    position: relative;
+    top: -2px;
+}
+
+@media (max-width: 480px) {
+    .pricing-plans__original-price {
+        font-size: 16px;
+    }
+    
+    .pricing-plans__original-price::before {
+        height: 1.5px;
+    }
+    
+    .pricing-plans__discount-badge {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+}
 
 
 
@@ -849,6 +909,166 @@ body {
 
 
 
+
+
+
+
+
+
+
+/* Ownership Benefits Section */
+.ownership-benefits {
+    padding: 80px 0;
+    background-color: #f9fafb;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ownership-benefits__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ownership-benefits__title {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.ownership-benefits__subtitle {
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.ownership-benefits__comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.ownership-benefits__bad,
+.ownership-benefits__good {
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.ownership-benefits__bad {
+    background-color: #fff;
+    border: 1px solid #ffebee;
+}
+
+.ownership-benefits__bad h3 {
+    color: #f44336;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ownership-benefits__bad ul {
+    list-style-type: none;
+}
+
+.ownership-benefits__bad li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: #6c757d;
+}
+
+.ownership-benefits__bad li:before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    color: #f44336;
+    font-weight: bold;
+}
+
+.ownership-benefits__good {
+    background-color: #fff;
+    border: 1px solid #e8f5e9;
+}
+
+.ownership-benefits__good h3 {
+    color: #4caf50;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ownership-benefits__good ul {
+    list-style-type: none;
+}
+
+.ownership-benefits__good li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.ownership-benefits__good li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.ownership-benefits__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.ownership-benefits__feature {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+}
+
+.ownership-benefits__feature:hover {
+    transform: translateY(-5px);
+}
+
+.ownership-benefits__feature h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.ownership-benefits__feature p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .ownership-benefits__comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .ownership-benefits__features {
+        grid-template-columns: 1fr;
+    }
+    
+    .ownership-benefits__title {
+        font-size: 28px;
+    }
+    
+    .ownership-benefits__subtitle {
+        font-size: 16px;
+    }
+}
 
 
 

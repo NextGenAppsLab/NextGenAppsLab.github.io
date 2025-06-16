@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage Examples — ContactScript</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="use-cases.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <a href="./index.html" class="header__logo-link">
+                    <div class="header__logo">
+                        <span class="logo-part logo-part--black">contact</span>
+                        <span class="logo-part logo-part--accent">script</span>
+                        <span class="header__slogan">social network script</span>
+                    </div>
+                </a>
+                <nav class="header__nav">
+                    <a href="./features.html" class="header__nav-link">Features</a>
+                    <a href="./pricing.html" class="header__nav-link">Pricing</a>
+                    <a href="./partners.html" class="header__nav-link">Partners</a>
+                    <a href="./contact.html" class="header__nav-link">Contact</a>
+                    <a href="./login.html" class="header__nav-link">Login</a>
+                    <a href="./start.html" target="_blank" class="header__nav-link header__nav-button">Get Started</a>
+                </nav>
+                <button class="header__menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.header__menu-toggle').addEventListener('click', function() {
+            document.querySelector('.header__nav').classList.toggle('header__nav--active');
+        });
+    </script>
+
+
+
+
+
+
+
+    <main class="main">
+
+
+
+
+
+
+
+
+<section class="use-cases">
+    <div class="use-cases__container">
+<div class="use-cases__header">
+    <h2 class="use-cases__title">Use Cases</h2>
+    <p class="use-cases__subtitle">How different businesses and communities use our product</p>
+</div>
+
+        
+        <div class="use-cases__accordion">
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Dating Website (Niche or Mainstream Platform)</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Startups in the online dating space</li>
+                <li>Interest-based communities (e.g. hobbies, lifestyle, religion, or culture)</li>
+                <li>Individuals or organizations looking to launch a local or niche dating site</li>
+            </ul>
+
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Users can create profiles and follow each other (like a "like")</li>
+                <li>Activity feed shows updates from people they’re interested in</li>
+                <li>Private messaging enables direct communication</li>
+                <li>Comments on posts help create a social, community feel</li>
+                <li>Scalable with filters for location, interests, relationship goals, etc.</li>
+            </ul>
+
+            <h4>Why it's in demand:</h4>
+            <ul>
+                <li>Online dating is a huge and growing market</li>
+                <li>There are hundreds of niches that need dedicated platforms (vegans, Christians, single moms, travelers, etc.)</li>
+                <li>Big platforms often overlook niche needs, so people look for alternatives</li>
+                <li>This script gives you a fast launch and saves time on custom development</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Private Social Network for a Professional Community</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Professional associations and unions (doctors, lawyers, architects, etc.)</li>
+                <li>Educational institutions (alumni, faculty, students)</li>
+                <li>HR agencies or companies building internal professional communities</li>
+                <li>Conferences and forums that want to keep the conversation going post-event</li>
+            </ul>
+
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Members create profiles with their job title, skills, and experience</li>
+                <li>Follow colleagues and industry leaders</li>
+                <li>Share content like case studies, industry news, and job openings</li>
+                <li>Comments on posts enable real professional discussions</li>
+                <li>Private messaging for collaboration or experience sharing</li>
+                <li>Option to add certifications, badges, or qualification highlights</li>
+            </ul>
+
+            <h4>Why it's in demand:</h4>
+            <ul>
+                <li>Professionals want to connect in a trusted, like-minded space</li>
+                <li>Mainstream social networks are often too noisy or not tailored to their needs</li>
+                <li>Some fields (like healthcare) benefit greatly from closed, private platforms</li>
+                <li>Great for knowledge sharing, networking, and finding mentors or partners</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Social Network for Apartment Complex Residents</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Property management companies and maintenance teams</li>
+                <li>Residents of apartment buildings or residential complexes</li>
+                <li>Homeowners associations (HOAs) and resident initiative groups</li>
+            </ul>
+
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Simplifies communication between residents and management</li>
+                <li>Easy way to report issues (leaks, noise, repairs needed, etc.)</li>
+                <li>Community space for sharing info with neighbors (services, lost & found, announcements)</li>
+                <li>Run polls and votes on important building matters</li>
+                <li>Share reports and updates from the management company</li>
+                <li>Private messaging and subscriptions to topics like repairs, landscaping, or safety</li>
+            </ul>
+
+            <h4>Why it's in demand:</h4>
+            <ul>
+                <li>Most apartment buildings don’t have a convenient way for residents to connect</li>
+                <li>No unified channel for quick communication with property managers</li>
+                <li>A closed social network keeps it secure — only residents get access</li>
+                <li>Fast and easy to launch without building everything from scratch</li>
+                <li>Encourages residents to be more engaged in managing and improving their community</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Interest-Based Dating Platform</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Startups in the online dating space</li>
+                <li>Community organizers focused on shared interests (hobbies, lifestyle, culture, etc.)</li>
+                <li>Entrepreneurs building local or niche dating platforms</li>
+            </ul>
+
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Users create detailed profiles that highlight who they are</li>
+                <li>Follow system lets users show interest in others (like "likes")</li>
+                <li>Activity feed keeps people updated on those they follow</li>
+                <li>Private messaging for comfortable one-on-one conversations</li>
+                <li>Comments on posts help foster a real social vibe</li>
+                <li>Smart filters based on interests, location, and relationship goals</li>
+            </ul>
+
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>The online dating market keeps growing steadily</li>
+                <li>There are tons of niche audiences looking for specialized platforms</li>
+                <li>Big dating apps often miss the mark on specific interests or communities</li>
+                <li>This solution lets you launch quickly without heavy development</li>
+                <li>The platform is flexible — tailor it to fit any kind of dating goal</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Private Professional Community</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Professional associations and industry unions</li>
+                <li>Educational institutions looking to connect alumni and faculty</li>
+                <li>Companies building internal expert communities</li>
+                <li>Conference organizers who want to extend networking after events</li>
+            </ul>
+
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Detailed user profiles with specialization and experience</li>
+                <li>Follow system for staying connected with peers and industry leaders</li>
+                <li>Sharing of professional content, resources, and updates</li>
+                <li>Commenting on posts encourages expert discussions</li>
+                <li>Direct messaging for consulting and collaboration</li>
+                <li>Built-in system for verifying qualifications and certifications</li>
+            </ul>
+
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Experts value a trusted, professional environment to communicate</li>
+                <li>Public platforms are often too broad and cluttered with noise</li>
+                <li>Many industries need a closed, vetted space for real connection</li>
+                <li>Perfect for networking and exchanging domain-specific knowledge</li>
+                <li>Great for mentoring, career growth, and professional development</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Interest-Based Community Platform</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Community leaders focused on hobbies and niche interests</li>
+                <li>Creators, experts, and influencers building their own following</li>
+                <li>Online schools and educational platforms to connect students</li>
+                <li>Businesses targeting niche audiences with shared passions</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Brings like-minded people together around a common theme</li>
+                <li>Share topic-specific content like tutorials, reviews, and updates</li>
+                <li>Follow system to keep up with members and top contributors</li>
+                <li>Private messaging for casual conversations</li>
+                <li>Extras like bulletin boards, member rankings, and a knowledge base</li>
+                <li>Organize real-world meetups and community events</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>People love connecting with others who share their passions</li>
+                <li>Interest-driven groups create stronger bonds than general platforms</li>
+                <li>Helps turn passive audiences into active, loyal communities</li>
+                <li>Opens the door for monetization through private clubs and exclusive content</li>
+                <li>Fast way to launch a tailored platform without building from scratch</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Corporate Social Network</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Mid-sized and large companies</li>
+                <li>Organizations with distributed teams and branch offices</li>
+                <li>HR teams focused on strengthening company culture</li>
+                <li>Companies with remote employees</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personalized employee profiles with professional info</li>
+                <li>Company newsfeed and updates on internal events</li>
+                <li>Follow system to build professional connections internally</li>
+                <li>Direct and group messaging for work-related discussions</li>
+                <li>Push notifications about important events and announcements</li>
+                <li>Gamification features to boost engagement</li>
+            </ul>
+            
+            <h4>Why it matters:</h4>
+            <ul>
+                <li>Improves communication across departments and teams</li>
+                <li>Helps unify distributed teams and remote workers</li>
+                <li>Creates a space for informal interaction and knowledge sharing</li>
+                <li>More user-friendly than traditional corporate intranets</li>
+                <li>Easy to roll out — lighter than full-scale HR platforms</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Educational Community</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Online schools and educational projects</li>
+                <li>Educational institutions at all levels</li>
+                <li>Teachers and program coordinators</li>
+                <li>Course and training organizers</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Creating profiles for students and instructors</li>
+                <li>Subscriptions to follow course materials and updates</li>
+                <li>Activity feed with lessons and assignments</li>
+                <li>Discussion of materials through comments</li>
+                <li>Private messaging for consultations and discussions</li>
+                <li>Tracking progress and achievements</li>
+            </ul>
+            
+            <h4>Why it matters:</h4>
+            <ul>
+                <li>Enhances interaction among participants in the learning process</li>
+                <li>Builds a space for collaborative learning and peer support</li>
+                <li>Complements traditional learning management systems</li>
+                <li>Especially valuable for remote education</li>
+                <li>Boosts student engagement and motivation</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Platform for Volunteers and Social Projects</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Charitable and nonprofit organizations</li>
+                <li>Volunteer groups and grassroots initiatives</li>
+                <li>Social and environmental projects</li>
+                <li>Civic activists and community leaders</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Creating profiles for participants and organizers</li>
+                <li>Following projects and teams to get updates</li>
+                <li>Posting reports, announcements, and calls for help</li>
+                <li>Discussing initiatives through comments</li>
+                <li>Coordinating actions via private messaging</li>
+                <li>Organizing events with calendars and schedules</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Provides a centralized platform for social initiatives</li>
+                <li>Helps organize volunteer efforts efficiently</li>
+                <li>Ensures a safe space for meaningful discussions</li>
+                <li>Keeps a record of projects and activities</li>
+                <li>Offers independence from commercial social platforms</li>
+                <li>Makes it easier to attract new volunteers and participants</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Platform for Creators and Their Audience</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Independent creators and content producers</li>
+                <li>Artists, writers, musicians, and bloggers</li>
+                <li>Media projects and creative teams</li>
+                <li>Platforms for monetizing original content</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal profiles with portfolios</li>
+                <li>Feed of posts to engage with followers</li>
+                <li>Subscription system for a loyal audience</li>
+                <li>Comments and discussions under posts</li>
+                <li>Private messaging for exclusive conversations</li>
+                <li>Monetization integration (subscriptions, exclusive content)</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Gives creators independence from big platform algorithms</li>
+                <li>Builds direct connections with a loyal fanbase</li>
+                <li>Allows for cultivating an intimate community of supporters</li>
+                <li>Provides tools for monetizing creative work</li>
+                <li>Offers full control over content and engagement</li>
+                <li>Quick launch of a personalized platform</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Platform for Local Communities</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Local government bodies and municipalities</li>
+                <li>Residents of neighborhoods, districts, and small towns</li>
+                <li>Community activists and grassroots groups</li>
+                <li>Neighborhood councils and local self-governance organizations</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal profiles with verified residency</li>
+                <li>Feed of local news and events</li>
+                <li>Themed discussions on neighborhood issues</li>
+                <li>Subscriptions to relevant topics (improvements, infrastructure)</li>
+                <li>Private messaging to coordinate joint actions</li>
+                <li>Extra tools: issue maps, polls, event calendars</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Creates a transparent platform for dialogue between residents and authorities</li>
+                <li>Allows focus specifically on local issues</li>
+                <li>Organizes discussions while keeping a record of decisions</li>
+                <li>Enables quick response to neighborhood problems</li>
+                <li>Brings neighbors together for joint initiatives</li>
+                <li>An alternative to cluttered general social networks and messengers</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Platform for Study Groups and Clubs</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>School classes and after-school groups</li>
+                <li>College clubs and student organizations</li>
+                <li>Sports teams and creative studios</li>
+                <li>Interest clubs within educational institutions</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personalized member profiles</li>
+                <li>News feed and event announcements</li>
+                <li>Themed discussions and planning</li>
+                <li>Private and group messaging</li>
+                <li>Sections for study materials and resources</li>
+                <li>Event calendar and class schedules</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Centralizes communication and materials in one place</li>
+                <li>Boosts organization and participant engagement</li>
+                <li>Keeps a history of discussions and useful resources</li>
+                <li>Makes coordinating group activities easy</li>
+                <li>An alternative to scattered messengers and social media</li>
+                <li>Creates a comfortable environment for learning collaboration</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Modern Platform for Themed Communities</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it's for:</h4>
+            <ul>
+                <li>Owners of themed forums and discussion boards</li>
+                <li>Community moderators looking to upgrade their platform</li>
+                <li>Organizers of niche interest groups</li>
+                <li>Admins of existing forums seeking a refresh</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Full-featured member profiles with subscription options</li>
+                <li>Modern discussion format – posts with threaded comments</li>
+                <li>Private messaging and alerts for new discussions</li>
+                <li>Themed sections with subscription capability</li>
+                <li>Flexible content display settings</li>
+                <li>Integration of social features into the traditional forum setup</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Combines the best of forums and social networks</li>
+                <li>Offers a sleek, modern interface for easy communication</li>
+                <li>Keeps the community focused on specific topics</li>
+                <li>Boosts engagement through social features</li>
+                <li>Gives traditional forums a fresh new life</li>
+                <li>Perfect for any niche community or interest group</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Community for Parents and Families</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Parents of kids of all ages</li>
+                <li>Parent committees and school groups</li>
+                <li>Child development and parenting specialists</li>
+                <li>Family clubs and learning centers</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal profiles with info about the kids</li>
+                <li>Feed of helpful tips and parenting experiences</li>
+                <li>Themed sections by age groups and topics</li>
+                <li>Private messaging for organizing group activities</li>
+                <li>Polls and surveys on relevant topics</li>
+                <li>Ability to create private interest-based groups</li>
+            </ul>
+            
+            <h4>Why it’s popular:</h4>
+            <ul>
+                <li>Creates a safe space to share parenting experiences</li>
+                <li>Helps find support at every stage of raising kids</li>
+                <li>Allows quick answers to pressing questions</li>
+                <li>Connects parents with shared interests and values</li>
+                <li>Enables organizing local meetups and events</li>
+                <li>Offers a structured alternative to social media</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Platform for Fan Communities and Enthusiasts</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Fans of music bands, movies, and gaming universes</li>
+                <li>Organizers of fan clubs and themed events</li>
+                <li>Content creators focused on specific franchises and hobbies</li>
+                <li>Active members of interest-based communities</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Vibrant profiles showcasing fan interests</li>
+                <li>Feeds with news, creative content, and fan works</li>
+                <li>Live discussions and comments on posts</li>
+                <li>Private messaging to coordinate group projects</li>
+                <li>Themed sections covering different aspects of the hobby</li>
+                <li>Reward system for active community members</li>
+            </ul>
+            
+            <h4>Why it’s popular:</h4>
+            <ul>
+                <li>Brings scattered fan communities together in one place</li>
+                <li>Creates a welcoming environment for true fans</li>
+                <li>Makes it easy to find like-minded people</li>
+                <li>Enables growth of creative fan projects</li>
+                <li>Boosts engagement through achievement rewards</li>
+                <li>Quick setup of themed spaces without technical hassles</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Platform for Sports Teams and Clubs</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Amateur and professional sports clubs</li>
+                <li>Coaches and sports schools</li>
+                <li>Athletes and team members</li>
+                <li>Organizers of sports events</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal profiles showcasing athletic achievements</li>
+                <li>Team news feed and updates on sports events</li>
+                <li>Photo and video galleries from practices and competitions</li>
+                <li>Discussions on tactics and game analysis</li>
+                <li>Event and training coordination through private messages</li>
+                <li>Training and competition calendar</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Centralizes communication within the sports community</li>
+                <li>Gives fans a platform to support their team</li>
+                <li>Makes coordinating training schedules easier</li>
+                <li>Keeps a record of achievements and club events</li>
+                <li>Creates a motivating environment for athletes</li>
+                <li>Quick setup with no need for complex development</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Platform for Creative Teams</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Theater and music groups</li>
+                <li>Dance studios and creative collectives</li>
+                <li>Art workshops and photo studios</li>
+                <li>Independent art projects and creative teams</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal profiles with participant portfolios</li>
+                <li>Showcase creative works and projects</li>
+                <li>Idea discussions and collaborative creation</li>
+                <li>Event coordination via private messages</li>
+                <li>Internal voting on projects</li>
+                <li>Archiving materials and collective feedback</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Creates an inspiring space for collaborative creativity</li>
+                <li>Makes communication easier within the team</li>
+                <li>Keeps a record of projects and creative achievements</li>
+                <li>Helps attract new audiences to the work</li>
+                <li>Fosters team spirit and idea development</li>
+                <li>Fast launch of a specialized platform</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Community for Travelers and Tourists</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Travel clubs and agencies</li>
+                <li>Outdoor enthusiasts and travelers</li>
+                <li>Organizers of group tours and expeditions</li>
+                <li>Travel bloggers and guides</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal profiles with travel history</li>
+                <li>Sharing reports and route recommendations</li>
+                <li>Discussions about gear, visas, and travel hacks</li>
+                <li>Finding travel buddies via private messages</li>
+                <li>Planning trips and events together</li>
+                <li>Route maps and a collection of useful resources</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Brings together like-minded travelers</li>
+                <li>Creates a reliable source of verified info</li>
+                <li>Makes it easier to find company for new trips</li>
+                <li>Allows sharing unique experiences and insights</li>
+                <li>Specialized alternative to general social networks</li>
+                <li>Quick setup without technical hassle</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Local Platform for Trading and Bartering</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Residents of neighborhoods and small towns</li>
+                <li>Local entrepreneurs and artisans</li>
+                <li>Farmers and homestead owners</li>
+                <li>Organizers of local fairs and exchanges</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal profiles with ratings and reviews</li>
+                <li>Posting listings for goods and services</li>
+                <li>Discussing deal terms in comments</li>
+                <li>Private negotiations through direct messages</li>
+                <li>Themed categories for goods and services</li>
+                <li>Organizing local events and fairs</li>
+            </ul>
+            
+            <h4>Why it’s popular:</h4>
+            <ul>
+                <li>Supports local producers and craftsmen</li>
+                <li>Makes buying and selling among neighbors easier</li>
+                <li>Builds a community economy based on mutual help</li>
+                <li>Helps discover unique local products</li>
+                <li>An alternative to large e-commerce platforms</li>
+                <li>Quick setup without complex infrastructure</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Expert Platform for Consultations</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Professional consultants and experts</li>
+                <li>Clients seeking qualified help</li>
+                <li>Professional associations and guilds</li>
+                <li>Online schools and educational projects</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Verified expert profiles with ratings</li>
+                <li>Publishing professional materials and case studies</li>
+                <li>Discussions and Q&A in comments</li>
+                <li>Private consultations via direct messages</li>
+                <li>Organizing themed groups and webinars</li>
+                <li>Review and recommendation system</li>
+            </ul>
+            
+            <h4>Why it’s popular:</h4>
+            <ul>
+                <li>Creates a trusted environment for professional networking</li>
+                <li>Gives experts a chance to grow their client base</li>
+                <li>Allows clients to quickly find vetted specialists</li>
+                <li>Connects like-minded pros in their fields</li>
+                <li>Offers a convenient format for knowledge sharing</li>
+                <li>Fast launch of expert communities without complex setups</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Creative & Hobby Space</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Craft artists and makers</li>
+                <li>Artists and creative instructors</li>
+                <li>Workshop organizers and art studios</li>
+                <li>Enthusiasts with various hobbies</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Personal galleries showcasing members’ work</li>
+                <li>Publishing workshops and creative guides</li>
+                <li>Discussing techniques and sharing tips</li>
+                <li>Organizing collaborative projects and exhibitions</li>
+                <li>Themed groups based on creative interests</li>
+                <li>Calendar of events and creative meetups</li>
+            </ul>
+            
+            <h4>Why it’s popular:</h4>
+            <ul>
+                <li>Fosters an inspiring environment for creative growth</li>
+                <li>Helps find like-minded hobbyists</li>
+                <li>Offers professional feedback opportunities</li>
+                <li>Makes organizing learning and collaboration easy</li>
+                <li>A specialized alternative to mainstream social networks</li>
+                <li>Quick launch with no technical hassle</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Professional Networking Platform</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>Professionals looking to expand their network</li>
+                <li>Freelancers and business owners</li>
+                <li>Industry community organizers</li>
+                <li>Career coaches and HR specialists</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Detailed profiles showcasing professional skills</li>
+                <li>Subscription system for key industry experts</li>
+                <li>Publishing industry news and analysis</li>
+                <li>Discussion of trends and case studies</li>
+                <li>Building business contacts via direct messages</li>
+                <li>Hosting themed discussions and online meetups</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Creates an effective environment for professional growth</li>
+                <li>Helps find partners and clients</li>
+                <li>Provides a platform for knowledge exchange</li>
+                <li>An alternative to crowded general platforms</li>
+                <li>Enables creation of niche professional communities</li>
+                <li>Quick launch of a specialized network</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>Corporate Team Collaboration Platform</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>HR teams and company leaders</li>
+                <li>Organizations with distributed teams</li>
+                <li>Startups and fast-growing businesses</li>
+                <li>Corporate culture managers</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Employee profiles with professional info</li>
+                <li>Corporate newsfeed and achievements</li>
+                <li>Project and department groups</li>
+                <li>Tools for team-building and motivation</li>
+                <li>Private and group messaging for coordination</li>
+                <li>Recognition and rewards system</li>
+                <li>Corporate event calendar</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Strengthens corporate culture and team spirit</li>
+                <li>Makes communication easier for distributed teams</li>
+                <li>Boosts employee engagement</li>
+                <li>Centralizes internal information</li>
+                <li>Cost-effective alternative to complex corporate solutions</li>
+                <li>Quick setup without complicated integrations</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>New Employee Onboarding Platform</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>HR departments and team leaders</li>
+                <li>Companies with remote employees</li>
+                <li>Organizations with active hiring processes</li>
+                <li>Corporate training centers</li>
+            </ul>
+            
+            <h4>Why you need it:</h4>
+            <ul>
+                <li>Individual profiles for new hires with onboarding milestones</li>
+                <li>Subscriptions to mentors and coworkers</li>
+                <li>Library of training materials and guidelines</li>
+                <li>Chat support with HR and coordinators</li>
+                <li>Groups for onboarding programs</li>
+                <li>Interactive plan for the first few weeks on the job</li>
+                <li>Motivation system and progress tracking</li>
+                <li>Collecting feedback on the onboarding experience</li>
+            </ul>
+            
+            <h4>Why it’s in demand:</h4>
+            <ul>
+                <li>Improves the effectiveness of onboarding programs</li>
+                <li>Reduces workload for HR professionals</li>
+                <li>Helps remote employees integrate faster</li>
+                <li>Decreases turnover during probation periods</li>
+                <li>Makes onboarding processes transparent and measurable</li>
+                <li>Quick setup without complex integrations</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="use-cases__item">
+    <div class="use-cases__question">
+        <h3>A Space for Genuine Connection</h3>
+        <svg class="use-cases__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="use-cases__answer">
+        <div class="use-cases__content">
+            <h4>Who it’s for:</h4>
+            <ul>
+                <li>People tired of traditional social networks</li>
+                <li>Those who value authentic, mask-free communication</li>
+                <li>Creative individuals looking for inspiration</li>
+                <li>Anyone wanting to connect on the same wavelength</li>
+            </ul>
+            
+            <h4>How it works:</h4>
+            <ul>
+                <li>Select your current mood using emoji-style indicators</li>
+                <li>Automatically join themed chat rooms</li>
+                <li>Participate actively or just listen in</li>
+                <li>Spontaneous meetups based on mutual interests</li>
+                <li>Create mini-events and interest-based clubs</li>
+                <li>No likes, ratings, or algorithmic pressure</li>
+            </ul>
+            
+            <h4>Why it matters:</h4>
+            <ul>
+                <li>Builds a comfortable space for genuine conversations</li>
+                <li>Respects different ways people engage socially</li>
+                <li>Helps find others through emotional resonance</li>
+                <li>Offers an alternative to commercialized platforms</li>
+                <li>Supports a healthy balance between connection and privacy</li>
+                <li>Quick setup for communities with a unique vibe</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+<script>
+    // Use Cases Accordion
+    const useCasesItems = document.querySelectorAll('.use-cases__item');
+    
+    useCasesItems.forEach(item => {
+        const question = item.querySelector('.use-cases__question');
+        
+        question.addEventListener('click', () => {
+            // Close all items
+            useCasesItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('use-cases__item--active');
+                }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('use-cases__item--active');
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__grid">
+            <!-- Company Info -->
+            <div class="footer__brand-col">
+                <a href="./index.html" class="footer__logo">
+                    <span class="footer__logo-part">contact</span>
+                    <span class="footer__logo-part footer__logo-part--accent">script</span>
+                </a>
+                <ul class="footer__links-list">
+                    <li style=" opacity: 50%; ">© 2025 All rights reserved</li>
+                </ul>
+            </div>
+
+            <!-- Links Column 1 -->
+            <div class="footer__links-col">
+                <h3 class="footer__links-title">Product</h3>
+                <ul class="footer__links-list">
+                    <li><a href="./features.html" class="footer__link">Features</a></li>
+                    <li><a href="./pricing.html" class="footer__link">Pricing</a></li>
+                    <li><a href="./business.html" class="footer__link">For Business</a></li>
+                </ul>
+            </div>
+
+            <!-- Links Column 2 -->
+            <div class="footer__links-col">
+                <h3 class="footer__links-title">Resources</h3>
+                <ul class="footer__links-list">
+                    <li><a href="./partners.html" class="footer__link">Partners</a></li>
+                    <li><a href="./partner-program.html" class="footer__link">Partner Program</a></li>
+                    <li><a href="./use-cases.html" class="footer__link">Use Cases</a></li>
+                    <li><a href="./faq.html" class="footer__link">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Links Column 3 -->
+            <div class="footer__links-col">
+                <h3 class="footer__links-title">Company</h3>
+                <ul class="footer__links-list">
+                    <li><a href="./contact.html" class="footer__link">Contact</a></li>
+                    <li><a href="./login.html" class="footer__link">Login</a></li>
+                    <li><a href="./privacy.html" class="footer__link">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
