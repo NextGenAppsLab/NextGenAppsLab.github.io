@@ -109,9 +109,16 @@ Your platform. Your rules. Your business — elevated.
         </div>
         <div class="control-section__image">
             <div class="control-section__phone-mockup">
-                <video class="control-section__phone-video" autoplay loop muted playsinline>
-                    <source src="./videos/index.mp4" type="video/mp4">
-                </video>
+
+
+<video 
+data-src="./videos/index.mp4" 
+class="control-section__phone-video" 
+muted loop 
+oncanplay="this.visibilityObserver = new IntersectionObserver(e => e[0].isIntersecting ? this.play() : this.pause()); this.visibilityObserver.observe(this)" 
+></video>
+
+
             </div>
         </div>
     </div>
@@ -140,10 +147,21 @@ Your platform. Your rules. Your business — elevated.
 
         <div class="app-demo__video-container">
             <div class="app-demo__video-wrapper">
-                <video class="app-demo__video" id="demo-video" autoplay loop muted playsinline>
-                    <source src="./videos/features-all.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+
+
+
+
+<video 
+data-src="./videos/features-all.mp4" 
+class="app-demo__video" 
+id="demo-video" 
+muted loop 
+oncanplay="this.visibilityObserver = new IntersectionObserver(e => e[0].isIntersecting ? this.play() : this.pause()); this.visibilityObserver.observe(this)" 
+></video>
+
+
+
+
                 <div class="app-demo__video-overlay"></div>
             </div>
         </div>
@@ -295,7 +313,24 @@ Your platform. Your rules. Your business — elevated.
 
 
 
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const $videos = document.querySelectorAll('video[data-src]');
+    
+    const $observer = new IntersectionObserver(($entries) => {
+        $entries.forEach($entry => {
+            if ($entry.isIntersecting) {
+                const $video = $entry.target;
+                $video.src = $video.dataset.src;
+                delete $video.dataset.src;
+                $observer.unobserve($video);
+            }
+        });
+    });
+    
+    $videos.forEach($video => $observer.observe($video));
+});
+</script>
 
 
 
