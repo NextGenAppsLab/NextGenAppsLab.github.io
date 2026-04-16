@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запуск демо-версии...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            background: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .loader {
+            border: 5px solid #ccc;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .info {
+            max-width: 400px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .btn {
+            display: none;
+            padding: 10px 20px;
+            background-color: #2684ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #1a6edb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <a href="https://lainek-client.onrender.com/?signInDemo" class="btn" id="startBtn">Начать</a>
+        <div class="info">
+            <p id="statusText">Дождитесь завершения загрузки...</p>
+            <p>
+            Исследуйте платформу без ограничений.<br>
+            Не волнуйтесь, здесь ничего нельзя сломать.<br>
+            Демо сбрасывается в начальное состояние каждые 5 минут.
+            </p>
+            <p>
+            Аккаунты: max, eva, alex, kate, nick, anna<br>
+            Пароль: 123456
+            </p>
+        </div>
+    </div>
+    <script>
+        const w = () => fetch('https://lainek-server.onrender.com', { mode: 'no-cors' });
+        (async () => {
+            await w();
+            await w();
+            
+            // Скрываем лоадер и текст ожидания, показываем кнопку
+            document.querySelector('.loader').style.display = 'none';
+            document.getElementById('statusText').style.display = 'none';
+            document.getElementById('startBtn').style.display = 'inline-block';
+        })();
+    </script>
+</body>
+</html>
+
